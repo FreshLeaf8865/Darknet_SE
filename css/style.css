@@ -2,20 +2,68 @@
 *{margin:0;padding:0;}
 
 body{ 
-	background:#F7F7F7;
+	background:#F1F2F2;
 	position: relative;
-}
-@font-face {
-    font-family: 'sfns_displayultralight';
-    src: url('../fonts/system_san_francisco_display_ultralight-webfont.eot');
-    src: url('../fonts/system_san_francisco_display_ultralight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/system_san_francisco_display_ultralight-webfont.woff2') format('woff2'),
-         url('../fonts/system_san_francisco_display_ultralight-webfont.woff') format('woff'),
-         url('../fonts/system_san_francisco_display_ultralight-webfont.ttf') format('truetype'),
-         url('../fonts/system_san_francisco_display_ultralight-webfont.svg#sfns_displayultralight') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family:'Helvetica Neue';
 
+}
+/*@font-face {*/
+/*    font-family: 'sfns_displayultralight';*/
+/*    src: url('../fonts/system_san_francisco_display_ultralight-webfont.eot');*/
+/*    src: url('../fonts/system_san_francisco_display_ultralight-webfont.eot?#iefix') format('embedded-opentype'),*/
+/*         url('../fonts/system_san_francisco_display_ultralight-webfont.woff2') format('woff2'),*/
+/*         url('../fonts/system_san_francisco_display_ultralight-webfont.woff') format('woff'),*/
+/*         url('../fonts/system_san_francisco_display_ultralight-webfont.ttf') format('truetype'),*/
+/*         url('../fonts/system_san_francisco_display_ultralight-webfont.svg#sfns_displayultralight') format('svg');*/
+/*    font-weight: normal;*/
+/*    font-style: normal;*/
+/**/
+/*}*/
+@font-face {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/l/font?kit=r3oQQBWBLofdqMg7Xagtpukn7qDDuAVK7kqCswEw3Og&skey=94b5a6be98cdd9eb) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/l/font?kit=r3oQQBWBLofdqMg7XagtpjVjFf_syfVex_PtjVjKcSY&skey=94b5a6be98cdd9eb) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}/* latin-ext */
+@font-face {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/l/font?kit=Lx1xfUTR4qFjwg0Z_pb900Q90xoKUepHWm8RyuRsBDk&skey=4ad46dd97873f7d7) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/l/font?kit=Lx1xfUTR4qFjwg0Z_pb902lgtcQKNFrDLaxj-COrDO0&skey=4ad46dd97873f7d7) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/l/font?kit=r3oQQBWBLofdqMg7XagtpntU6JjveXVVMXku74YzDgs&skey=ba59c4fdb0ab3b35) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/l/font?kit=r3oQQBWBLofdqMg7Xagtpo-jif12_EhGDy_Tj7lcXrA&skey=ba59c4fdb0ab3b35) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 .more_text.col-sm-12 > a {
     font-weight: bolder;
@@ -105,18 +153,24 @@ li {list-style: outside none none;}
 .search .btn.btn-default {
   background: none repeat scroll 0 0 #CCFF00;
   border: medium none;
+  border-radius:initial;
   color: #5C5C5C;
   cursor: auto;
-  height:46px;
-  width:100px;
+  height:38px;
+  width:92px;
   font-size:15px;
-  font-weight:600;
+  font-weight:300;
+  margin-left: 3px;
   /* visibility:hidden !important; */
 }
 .search-text{
 	position: relative;
     float: left;
-	width:40%;
+	width:385px;
+}
+.search-text .form-control{
+	height: 38px;
+    border: 0px;
 }
 @media (max-width:480px){
 .search_result .logo {width: 100%;float:left;}
@@ -267,11 +321,10 @@ dd tbody tr:last-child{display:none;}
 }
 .header-menu{
 	list-style-type: none;
-    margin-top: 12px;
-	margin-bottom: 12px;
-    padding: 0px 30px;
+    padding: 8px 30px;
 	float:left;
-	font-size:17px;
+	font-size:15px;
+	font-weight:100;
 }
 
 .header-menu li {
@@ -280,20 +333,26 @@ dd tbody tr:last-child{display:none;}
 	
 }
 .header-menu li a {
+    position:relative;
+    z-index:10;
     color: white;
 	text-decoration: none;
+    font-weight:200;
+    letter-spacing:1px;
 }
 .center-text{
-	width:50%;
+	width:477px;
 }
 h1, h2, h3, p, h4, .word h1 {
-	font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; 
+	font-family: "Helvetica Neue", sans-serif;
 	font-style: normal; 
-	line-height: 1.2;
+	line-height: 1.4;
 }
 h1 {
-	font-size: 23px;
+	font-size: 21px;
 	color: #5C5C5C;
+	margin:0;
+    font-weight:200;
 }
 h2 {
 	font-size: 33.86px;
@@ -311,11 +370,11 @@ p {
 	font-size: 20px;
 	color: #535353;
 }
-.word h1{
-    font-size: 50px;
+.title h1{
+    font-size: 40px;
 	font-weight:800;
 	color: #5C5C5C;
-	padding-left:15px;
+    line-height:1;
 	padding-right:15px;
 
 }
@@ -323,9 +382,9 @@ p {
 	border-radius:initial;
 }
 .link{
-	position: absolute;
     width: 100%;
 	background:#4a4a4a;
+	height:38px;
 }
 
 .below-button{
@@ -441,6 +500,7 @@ p {
 
 #start-form {
 	position: relative;
+    margin-top:-38px;
 }
 
 #start-form .word h1 {
@@ -451,15 +511,162 @@ p {
 /*}*/
 
 #start-form .form-container {
-	top: 45%;
+	top: 55%;
 	margin-top: -160px;
 	left: 50%;
 	transform: translate(-50%);
 }
 
-.container img {
-	max-width: 90%;
+/*.container img {*/
+/*	max-width: 90%;*/
+/*}*/
+.center-img img{
+	width:461px;
+	height:585px;
 }
 .center-img{
-	margin-top:75%;
+	position:relative;
+	float:left;
+	text-align:center;
+	width:44%;
+}
+.right-text{
+	position:relative;
+	float:right;
+	border-left:1px solid black;
+	height:129px;
+	width:28%;
+	padding-left:28px;
+	font-size:21px;
+}
+.right-text h1{
+    font-weight:300;
+}
+.right-text p{
+    font-weight:200;
+}
+.left-text{
+	position:relative;
+	float:left;
+	border-right:1px solid black;
+	height:180px;
+	text-align:right;
+	width:28%;
+	padding-right:28px;
+	margin-top:125px;
+    font-size:21px;
+}
+.left-text h1{
+    font-weight:300;
+}
+.left-text p{
+    font-weight:200;
+}
+.bottom-text1, .bottom-text2, .bottom-text3{
+	text-align:center;
+}
+.bottom-text1 h1{
+	font-size:35px;
+	padding-top:90px;
+	line-height:4;
+}
+.bottom-text2 h1{
+	font-family: "Helvetica Neue";
+	font-style: normal;
+	font-size:21px;
+    font-weight:200;
+}
+.bottom-text1-title{
+	border-top:1px solid #9B9B9B;
+}
+.bottom-text3 h1{
+	font-size:21px;
+	color:red;
+	line-height:5;
+}
+.bottom-link{
+	margin:0 auto;
+	display:inline;
+}
+.bottom-link li{
+    position:relative;
+    float:left;
+    font-weight: 400;
+    color: #5C5C5C;
+    padding-left:5px;
+    margin-top: 29px;
+}
+.bottom-link li a{
+    color:#9B9B9B;
+}
+.footer-mother{
+    float:right;
+    margin-bottom:38px;
+    font-size:40px;
+    font-weight:bold;
+    color:#9b9b9b;
+}
+
+.header-wrapper{
+	height:121px;
+}
+.header-search{
+	height:83px;
+}
+/*.form-group{*/
+/*	padding-top: 20px;*/
+/*    padding-left: 120px;*/
+/*}*/
+.form-group-sub{
+	padding-top: 12px;
+    padding-left: 120px;
+}
+.content-wrapper{
+	width:100%;
+    margin-left: 40px;
+}
+.content-text{
+	margin:0 auto;
+//	border-bottom:1px solid #9B9B9B;
+//	padding-bottom:45px;
+}
+.content-text h1{
+	font-size:35px;
+	padding-top: 70px;
+    padding-bottom: 40px;
+    font-weight:200;
+}
+.content-text h2{
+	font-size:25px;
+	padding-top: 60px;
+    padding-bottom: 20px;
+    font-weight:200;
+}
+.content-text p{
+	font-size:18px;
+    font-weight:200;
+    line-height:1.2;
+    letter-spacing:0.8px;
+}
+.sensible li{
+	margin-left:15px;
+}
+.bottom-blank{
+	height:180px;
+}
+.header-text {
+	position:absolute;
+    margin: 13px 0px 0 22px;
+}
+.header-text h1{
+    position:relative;
+    font-size:28px;
+    font-weight:bold;
+    z-index:9;
+}
+.last{
+	font-size:40px;
+	color:#9b9b9b;
+	font-weight:bold;
+	margin-left:130px;
 }
