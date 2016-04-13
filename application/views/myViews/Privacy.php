@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 include('simple_html_dom.php');
 ?>
@@ -13,7 +13,6 @@ include('simple_html_dom.php');
 <link href="<?php echo base_url(); ?>css/bootstrap.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css" />
-<link href='//fonts.googleapis.com/css?family=Helvetica+Neue:light,bold' rel='stylesheet' type='text/css'>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -28,8 +27,7 @@ include('simple_html_dom.php');
 <script src="<?php echo base_url(); ?>js/script.js"></script>
 </head>
 <body>
-<!--div class="panel panel-default" style="border-color:white;">
-  <div class="panel-heading" style="border-color:white;"-->
+
   <div class="header-wrapper">
 	  <div class="header-link link">
 		<ul class="header-menu" style="display:inline;">
@@ -43,23 +41,24 @@ include('simple_html_dom.php');
 		<div class = "col-md-12 form-container">
 			<div class="row">
 				<div class="word">
-					<span class="header-text"><h1>Mother</h1><br></span>
-						<form method="post" action="">
+					<span class="header-text"><h1>Mother</h1></span>
+						<form method="post" action="<?php echo $this->config->base_url();?>index.php/welcome2/results">
 							<div class="col-md-12">
 								<div class="form-group-sub search">
 								   <div class = "search-text">
-										<input type="text" class="form-control input-lg" onfocus="this.placeholder = ''" onblur="this.placeholder = 'What are you looking for?'" type="text" id="q" name="search" class="input" placeholder="What are you looking for?" value="<?php echo isset($_POST['search']) ? $_POST['search'] : '' ?>">
+										<input type="text" class="form-control input-lg" onfocus="this.placeholder = ''" type="text" id="q" name="search" class="input" value="<?php echo isset($_POST['search']) ? $_POST['search'] : '' ?>">
 								   </div>
 								   <div>
 										<input class="btn btn-default" type="submit" name="button" value="Search" class="button">
 								   </div>									
 								</div>
-							</div>
 						</form>			
 				</div>
 			</div>
-	  </div>
-  </div>
+        </div>
+    </div>
+</div>
+<div class = "col-md-10 container">
   <div class="content-wrapper">
 	<div class="content-text">
 	
@@ -259,26 +258,21 @@ admin@_.com.
 				?>
 	</div>
 	<div class="bottom-blank"></div>
-<!--<div class="panel panel-default" style="border-color:white;">
-  <div class="panel-heading" style="border-color:white;">-->
-  <div class="bottom-link">
-	<ul class="header-menu bottom-menu" style="display:inline;">
-		<li>Copyright 2016 Mother Inc. All rights reserved.</li>
-		<li>Term and conditions-</li>
-		<li><a href="*">Privacy Policy-</a></li>
-		<li><a href="*">About-</a></li>
-		<li><a href="*">Feedbacks-</a></li>
-		<li><a href="*">Donations</a></li>
-	</ul>
-	<div class="footer-text">
-		<h1>Mother</h1>
-	</div>
-  </div>
- </div>
-
+    </div>
 </div>
-
-
+    <div class="container">
+             <div class="bottom-link">
+             <ul>
+             <li>Copyright 2016 Mother Inc. All rights reserved.</li>
+             <li><a href="<?php echo base_url();?>index.php/terms">Term and conditions -</a></li>
+             <li><a href="<?php echo base_url();?>index.php/privacy">Privacy Policy - </a></li>
+             <li><a href="*">Feedbacks - </a></li>
+             <li><a href="*">Donations</a></li>
+             </ul>
+             <div class="footer-mother">Mother</div>
+             </div>
+             </div>
+    </div>
 </body>
 </html>
 

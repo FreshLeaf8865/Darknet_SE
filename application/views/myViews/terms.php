@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 include('simple_html_dom.php');
 ?>
@@ -43,12 +43,12 @@ include('simple_html_dom.php');
 		<div class = "col-md-12 form-container">
 			<div class="row">
 				<div class="word">
-					<span class="header-text"><h1>Mother</h1><br></span>
-						<form method="post" action="">
+					<span class="header-text"><h1>Mother</h1></span>
+						<form method="post" action="<?php echo $this->config->base_url();?>index.php/welcome2/results">
 							<div class="col-md-12">
 								<div class="form-group-sub search">
 								   <div class = "search-text">
-										<input type="text" class="form-control input-lg" onfocus="this.placeholder = ''" onblur="this.placeholder = 'What are you looking for?'" type="text" id="q" name="search" class="input" placeholder="What are you looking for?" value="<?php echo isset($_POST['search']) ? $_POST['search'] : '' ?>">
+										<input type="text" class="form-control input-lg" onfocus="this.placeholder = ''" type="text" id="q" name="search" class="input" value="<?php echo isset($_POST['search']) ? $_POST['search'] : '' ?>">
 								   </div>
 								   <div>
 										<input class="btn btn-default" type="submit" name="button" value="Search" class="button">
@@ -60,6 +60,8 @@ include('simple_html_dom.php');
 			</div>
 	  </div>
   </div>
+
+<div class="col-md-10 container">
   <div class="content-wrapper">
 	<div class="content-text">
 	
@@ -84,17 +86,17 @@ include('simple_html_dom.php');
 
 <p>3.1  You'll not use the Website in an unauthorized manner or in a manner which encourages any kind of illegal activity. You agree not to use the Website to:<br>
 	<ul class = "sensible">
-		<li><p>Violate the applicable laws;</p><li>
-		<li><p>Cause harm to any individual or business entity;</p><li>
-		<li><p>Disturb the operations of the Company;</p><li>
-		<li><p>Transmit or promote anything from the Company's behalf that is fraudulent, abusive, or contains 
+		<li><p>- Violate the applicable laws;</p><li>
+		<li><p>- Cause harm to any individual or business entity;</p><li>
+		<li><p>- Disturb the operations of the Company;</p><li>
+		<li><p>- Transmit or promote anything from the Company's behalf that is fraudulent, abusive, or contains
     slanderous, 
     obscene or otherwise objectionable material;</p><li>
-		<li><p>Spread  malware,  including, but not limited to, trojan horses, viruses, worms or other software that 
+		<li><p>- Spread  malware,  including, but not limited to, trojan horses, viruses, worms or other software that
     can alter, interrupt, impede, limit or destroy the performance and/or functioning of any software,   
     hardware, or other equipment;</p><li>
-		<li><p>Promote the use of alcohol and tobacco; and</p><li>
-		<li><p>Promote the use of illegal drugs or any other illegal subst
+		<li><p>- Promote the use of alcohol and tobacco; and</p><li>
+		<li><p>- Promote the use of illegal drugs or any other illegal subst
     ances.</p><li>
 	</ul>
  
@@ -227,25 +229,22 @@ By agreeing to these Terms, you agree not to hold the Company liable for any ill
 				?>
 	</div>
 	<div class="bottom-blank"></div>
-<!--<div class="panel panel-default" style="border-color:white;">
-  <div class="panel-heading" style="border-color:white;">-->
-  <div class="bottom-link">
-	<ul class="header-menu bottom-menu" style="display:inline;">
-		<li>Copyright 2016 Mother Inc. All rights reserved.</li>
-		<li>Term and conditions-</li>
-		<li><a href="*">Privacy Policy-</a></li>
-		<li><a href="*">About-</a></li>
-		<li><a href="*">Feedbacks-</a></li>
-		<li><a href="*">Donations</a></li>
-	</ul>
-	<div class="footer-text">
-		<h1>Mother</h1>
-	</div>
-  </div>
- </div>
 
+    </div>
+    </div>
+        <div class="container">
+             <div class="bottom-link">
+             <ul>
+             <li>Copyright 2016 Mother Inc. All rights reserved.</li>
+             <li><a href="<?php echo base_url();?>index.php/terms">Term and conditions -</a></li>
+             <li><a href="<?php echo base_url();?>index.php/privacy">Privacy Policy - </a></li>
+             <li><a href="*">Feedbacks - </a></li>
+             <li><a href="*">Donations</a></li>
+             </ul>
+             <div class="footer-mother">Mother</div>
+             </div>
+        </div>
 </div>
-
 
 </body>
 </html>
