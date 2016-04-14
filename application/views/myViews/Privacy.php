@@ -79,32 +79,15 @@ include('simple_html_dom.php');
 
 <h2>2. The purpose of collection of personal information</h2> 
 
-<p>2.1 The personal information collected through the Website is used only: to reply to your support queries; to comply with lawful governmental requests and/or lawful requests by the police investigating suspected illegal activities. 
-
-2.2 We collect and process your personal information only for the achievement of one or more of the aforementioned purposes.
-  
-2.3 We do not create data profiles of users. We do not use your  personal  information  for 
-marketing purposes. 
- 
-2.4 In case we are compelled by law, subpoena, or other legal process, whether in the United States, Canada, Australia or other jurisdictions, we will attempt to notify you about the legal demands for your personal information, unless prohibited by law, court, or a governmental institution. In case we believe that the requests are overbroad, lack proper authority, or vague, we may, at our sole discretion, dispute such legal demands.
+<p>2.1 The personal information collected through the Website is used only: to reply to your support queries; to comply with lawful governmental requests and/or lawful requests by the police investigating suspected illegal activities.<br>2.2 We collect and process your personal information only for the achievement of one or more of the aforementioned purposes.<br>2.3 We do not create data profiles of users. We do not use your  personal  information  for marketing purposes.<br>2.4 In case we are compelled by law, subpoena, or other legal process, whether in the United States, Canada, Australia or other jurisdictions, we will attempt to notify you about the legal demands for your personal information, unless prohibited by law, court, or a governmental institution. In case we believe that the requests are overbroad, lack proper authority, or vague, we may, at our sole discretion, dispute such legal demands.
 Please be aware that we do not commit to challenge every legal demand.  
 </p>
- 
-<br> 
-
-
 
 
 <h2>3. Protection of personal information</h2> 
 
-<p>3.1 We use information security tools (e.g., secured networks and encryption) in order to protect your personal information. 
-
-3.2 We follow commercially reasonable management practices to help protect the security, integrity, and confidentiality of your personal information. Although no computer system is completely secure, we believe that
-the measures implemented by us will reduce the likelihood of information security problems.  
-
-3.3 Please remember that any information you transfer over the Internet may be intercepted by others and used in unscrupulous ways. We have absolutely no control over your Internet connection. 
+<p>3.1 We use information security tools (e.g., secured networks and encryption) in order to protect your personal information.<br>3.2 We follow commercially reasonable management practices to help protect the security, integrity, and confidentiality of your personal information. Although no computer system is completely secure, we believe that the measures implemented by us will reduce the likelihood of information security problems.<br>3.3 Please remember that any information you transfer over the Internet may be intercepted by others and used in unscrupulous ways. We have absolutely no control over your Internet connection.
  </p>
-
 
 
 <h2>4. Accessing and correcting your personal information</h2>
@@ -113,22 +96,15 @@ the measures implemented by us will reduce the likelihood of information securit
 </p>
 
 
+<h2>5. Retention Period</h2>
 
-<h2>5. Retention Period
-</h2>
-
-<p>5.1 We will keep your personal information for as long as it is necessary to respond to your support query. 
-
-5.2 If your personal information is no longer necessary for responding to your support query, we will keep it for a maximum of one year in identifiable form.
-</p>
+<p>5.1 We will keep your personal information for as long as it is necessary to respond to your support query.<br>5.2 If your personal information is no longer necessary for responding to your support query, we will keep it for a maximum of one year in identifiable form.</p>
 
 
 
 <h2>6. Third parties</h2>
  
-<p>6.1 Unless we are compelled by law to do so, we will not disclose your personal information to third parties. 
-
-6.2 We will not rent or sell your personal information to third parties without your prior written consent.</p> 
+<p>6.1 Unless we are compelled by law to do so, we will not disclose your personal information to third parties.<br>6.2 We will not rent or sell your personal information to third parties without your prior written consent.</p>
 
 
 
@@ -159,15 +135,8 @@ the measures implemented by us will reduce the likelihood of information securit
 
 <h2>11. Children</h2>
 
-<p>11.1 We do not collect or process information from persons we actually know are under the age of 13 years.
- 
-11.2 No part of the Website is structured to attract anyone under the age of 13 years. 
-
-11.3 Parents should be aware of the existence of parental control tools available on the Internet which  they  can  use to prevent their children from: (i) submitting information online without parental permission; and (ii)accessing material that is inappropriate for children.
- 
-11.4 If you believe that your child has provided us with personal information, please send us an email to admin@searcher.plus . 
+<p>11.1 We do not collect or process information from persons we actually know are under the age of 13 years.<br>11.2 No part of the Website is structured to attract anyone under the age of 13 years.<br>11.3 Parents should be aware of the existence of parental control tools available on the Internet which  they  can  use to prevent their children from: (i) submitting information online without parental permission; and (ii)accessing material that is inappropriate for children.<br>11.4 If you believe that your child has provided us with personal information, please send us an email to admin@searcher.plus .
 </p>
-
 
 
 <h2>12. Place of data processing</h2>
@@ -179,8 +148,7 @@ the measures implemented by us will reduce the likelihood of information securit
 
 <h2>13. Acquisition or Merger </h2>
 
-<p>13.1 In case we are involved in acquisition, merger, or sale of all or portion of our assets, we will post a notice on the Website indicating the change in ownership as well as any choices you may have regarding your personal information. 
-</p>  
+<p>13.1 In case we are involved in acquisition, merger, or sale of all or portion of our assets, we will post a notice on the Website indicating the change in ownership as well as any choices you may have regarding your personal information.</p>  
 
 
 
@@ -189,18 +157,12 @@ the measures implemented by us will reduce the likelihood of information securit
 <p>14.1 This Privacy Policy shall be construed in accordance with the laws of the State of California, the United States of America. </p> 
 
 
-
 <h2>15. Contact details</h2>  
 
-<p>15.1 If you would like to ask us any questions about this Privacy Policy, please send us an email to
-admin@_.com. 
-</p>
-<h2>16. California User Consumer Rights
-</h2>  
+<p>15.1 If you would like to ask us any questions about this Privacy Policy, please send us an email to admin@_.com.</p>
+<h2>16. California User Consumer Rights</h2>
 
-<p>16.1 Pursuant to California Civil Code Section 1789.3, users of the Website residing in California are entitled to know that they may file complaints and grievances with California Department of Consumer Affairs, 400 R Street, STE 1080, Sacramento, CA 95814; or by phone at 916-445-1254 or 800-952-5210; or by email to dca@dca.ca.gov. If you would like to know more about protecting your privacy, please visit http://www.ftc.gov . 
-
-16.2 If you are a resident of California, California Civil Code Section 1798.83 allows you to request us information about the disclosure of your personal information to third parties for the third parties’ direct  marketing purposes. To make such a request, please send us an email to admin@searcher.plus.  
+<p>16.1 Pursuant to California Civil Code Section 1789.3, users of the Website residing in California are entitled to know that they may file complaints and grievances with California Department of Consumer Affairs, 400 R Street, STE 1080, Sacramento, CA 95814; or by phone at 916-445-1254 or 800-952-5210; or by email to dca@dca.ca.gov. If you would like to know more about protecting your privacy, please visit http://www.ftc.gov.<br>16.2 If you are a resident of California, California Civil Code Section 1798.83 allows you to request us information about the disclosure of your personal information to third parties for the third parties’ direct  marketing purposes. To make such a request, please send us an email to admin@searcher.plus.
 
 </p>
 <h2>17. Amendments </h2>  
@@ -210,53 +172,11 @@ admin@_.com.
 </p>
 <h2>18. Last amendment </h2>  
 
-<p>18.1 This Privacy Policy was amended for the last time on 20th of March 2016.
-</p>
-	</div>
+<p>18.1 This Privacy Policy was amended for the last time on 20th of March 2016.</p>
+    </div>
   </div>
   
  
-	<div id="showresults"></div>
-			<div class="results">
-				<?php
-					if(isset($_REQUEST['button']))
-					{
-					$value=$_REQUEST['search'];
-					// Retrieve the DOM from a given URL
-					$html = file_get_html('http://xmh57jrzrnw6insl.onion.link/5dc02cc7lc/search.cgi?q='.$value.'&cmd=Search!');
-					 $ol=$html->find('dl'); 
-					if(empty($ol))
-					{
-				?>
-					<div style="color:#0081f9;font-size: 17px;margin-left: 9px;margin-top: 15px; display:none;">
-						Sorry, couldn't find results for
-						<span style="color:#000"><?php echo $value ?> </span> 
-						.Please try again with a different search.
-					</div>
-				<?php 
-					}
-					else
-					{
-						foreach($ol as $e)
-						echo $e;
-					}
-							if(!empty($ol))
-						{
-								?><div class="pagination"><?php
-								//pagination coding
-								$i=1;
-								for($i=1;$i<=10;$i++)
-								{
-							?>
-							<a href="http://clientdemoonline.com/deepweb/index.php/Welcome2/results?page=<?php echo $i ;?>&value=<?php echo $value ;?>"><?php echo $i;?></a>
-							<?php
-								}
-							  ?></div><?php
-						}
-
-					}
-				?>
-	</div>
 	<div class="bottom-blank"></div>
     </div>
 </div>
