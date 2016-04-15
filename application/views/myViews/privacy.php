@@ -52,6 +52,7 @@ include('simple_html_dom.php');
 										<input class="btn btn-default" type="submit" name="button" value="Search" class="button">
 								   </div>									
 								</div>
+                            </div>
 						</form>			
 				</div>
 			</div>
@@ -79,32 +80,32 @@ include('simple_html_dom.php');
 
 <h2>2. The purpose of collection of personal information</h2> 
 
-<p>2.1 The personal information collected through the Website is used only: to reply to your support queries; to comply with lawful governmental requests and/or lawful requests by the police investigating suspected illegal activities.<br>2.2 We collect and process your personal information only for the achievement of one or more of the aforementioned purposes.<br>2.3 We do not create data profiles of users. We do not use your  personal  information  for marketing purposes.<br>2.4 In case we are compelled by law, subpoena, or other legal process, whether in the United States, Canada, Australia or other jurisdictions, we will attempt to notify you about the legal demands for your personal information, unless prohibited by law, court, or a governmental institution. In case we believe that the requests are overbroad, lack proper authority, or vague, we may, at our sole discretion, dispute such legal demands.
+<p>2.1 The personal information collected through the Website is used only: to reply to your support queries; to comply with lawful governmental requests and/or lawful requests by the police investigating suspected illegal activities.<br><br>2.2 We collect and process your personal information only for the achievement of one or more of the aforementioned purposes.<br><br>2.3 We do not create data profiles of users. We do not use your  personal  information  for marketing purposes.<br><br>2.4 In case we are compelled by law, subpoena, or other legal process, whether in the United States, Canada, Australia or other jurisdictions, we will attempt to notify you about the legal demands for your personal information, unless prohibited by law, court, or a governmental institution. In case we believe that the requests are overbroad, lack proper authority, or vague, we may, at our sole discretion, dispute such legal demands.
 Please be aware that we do not commit to challenge every legal demand.  
 </p>
 
 
 <h2>3. Protection of personal information</h2> 
 
-<p>3.1 We use information security tools (e.g., secured networks and encryption) in order to protect your personal information.<br>3.2 We follow commercially reasonable management practices to help protect the security, integrity, and confidentiality of your personal information. Although no computer system is completely secure, we believe that the measures implemented by us will reduce the likelihood of information security problems.<br>3.3 Please remember that any information you transfer over the Internet may be intercepted by others and used in unscrupulous ways. We have absolutely no control over your Internet connection.
+<p>3.1 We use information security tools (e.g., secured networks and encryption) in order to protect your personal information.<br><br>3.2 We follow commercially reasonable management practices to help protect the security, integrity, and confidentiality of your personal information. Although no computer system is completely secure, we believe that the measures implemented by us will reduce the likelihood of information security problems.<br><br>3.3 Please remember that any information you transfer over the Internet may be intercepted by others and used in unscrupulous ways. We have absolutely no control over your Internet connection.
  </p>
 
 
 <h2>4. Accessing and correcting your personal information</h2>
 
-<p>4.1 You have the right to access, delete, or modify your personal information collected by the Company. You    can do so by sending an email to the following email address admin@_.com. We will respond to your request within two weeks. 
+<p>4.1 You have the right to access, delete, or modify your personal information collected by the Company. You can do so by sending an email to the following email address admin@_.com. We will respond to your request within two weeks.
 </p>
 
 
 <h2>5. Retention Period</h2>
 
-<p>5.1 We will keep your personal information for as long as it is necessary to respond to your support query.<br>5.2 If your personal information is no longer necessary for responding to your support query, we will keep it for a maximum of one year in identifiable form.</p>
+<p>5.1 We will keep your personal information for as long as it is necessary to respond to your support query.<br><br>5.2 If your personal information is no longer necessary for responding to your support query, we will keep it for a maximum of one year in identifiable form.</p>
 
 
 
 <h2>6. Third parties</h2>
  
-<p>6.1 Unless we are compelled by law to do so, we will not disclose your personal information to third parties.<br>6.2 We will not rent or sell your personal information to third parties without your prior written consent.</p>
+<p>6.1 Unless we are compelled by law to do so, we will not disclose your personal information to third parties.<br><br>6.2 We will not rent or sell your personal information to third parties without your prior written consent.</p>
 
 
 
@@ -135,7 +136,7 @@ Please be aware that we do not commit to challenge every legal demand.
 
 <h2>11. Children</h2>
 
-<p>11.1 We do not collect or process information from persons we actually know are under the age of 13 years.<br>11.2 No part of the Website is structured to attract anyone under the age of 13 years.<br>11.3 Parents should be aware of the existence of parental control tools available on the Internet which  they  can  use to prevent their children from: (i) submitting information online without parental permission; and (ii)accessing material that is inappropriate for children.<br>11.4 If you believe that your child has provided us with personal information, please send us an email to admin@searcher.plus .
+<p>11.1 We do not collect or process information from persons we actually know are under the age of 13 years.<br><br>11.2 No part of the Website is structured to attract anyone under the age of 13 years.<br><br>11.3 Parents should be aware of the existence of parental control tools available on the Internet which  they  can  use to prevent their children from: (i) submitting information online without parental permission; and (ii)accessing material that is inappropriate for children.<br><br>11.4 If you believe that your child has provided us with personal information, please send us an email to admin@searcher.plus .
 </p>
 
 
@@ -180,7 +181,7 @@ Please be aware that we do not commit to challenge every legal demand.
 	<div class="bottom-blank"></div>
     </div>
 </div>
-    <div class="container">
+    <div class="bottom-section">
              <div class="bottom-link">
              <ul>
              <li>Copyright 2016 Mother Inc. All rights reserved.</li>

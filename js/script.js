@@ -26,6 +26,13 @@
 			$(".result").css("float","left");
 		}
 	});
+	$(document).ready(function(){
+		var h = $(window).height()-125;
+		var imgheight = h.toString()+'px';
+		$(".iceberg").css('margin-top', imgheight);
+		console.log(imgheight);
+	});
+
 })(jQuery);
 
 

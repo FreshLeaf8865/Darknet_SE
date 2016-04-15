@@ -22,28 +22,30 @@ class Welcome2 extends CI_Controller {
 	{
 		$this->load->view('myViews/view');
 		$this->load->helper('url');
-if(isset($_POST['keyword']))
-{
-$value=$_POST['keyword'];
-$html = file_get_html('https://ahmia.fi/search/?q='.$value.'');
-foreach($html->find('ol li h4 a') as $e) {
-	//echo $e;
-	if(strip_tags($e) != "Proxy"){
-?> <a href="http://192.168.1.10/sarupam/CodeIgniter/?q=<?php echo strip_tags($e); ?>"  ><?php echo strip_tags($e); ?></a><br><?php
-}
-}
- exit;
-}
+			if(isset($_POST['keyword']))
+			{
+				$value=$_POST['keyword'];
+				$html = file_get_html('https://ahmia.fi/search/?q='.$value.'');
+				foreach($html->find('ol li h4 a') as $e) {
+					//echo $e;
+					if(strip_tags($e) != "Proxy")
+					{
+?>					
+
+			<a href="http://192.168.1.10/sarupam/CodeIgniter/?q=<?php echo strip_tags($e); ?>"  ><?php echo strip_tags($e); ?></a><br>
 
 
-
-	}
-	
-	
+<?php
+					}
+				}
+				exit;
+			}
+	}			
 	public function results()
 	{
 		$this->load->view('myViews/view2');
+		
 	}
-	
+				
 
 }
