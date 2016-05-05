@@ -25,14 +25,12 @@
 			$(".search-content").css("padding",0);
 			$(".result").css("float","left");
 		}
-	});
-	$(document).ready(function(){
-		var h = $(window).height()-125;
-		var imgheight = h.toString()+'px';
-		$(".iceberg").css('margin-top', imgheight);
-		console.log(imgheight);
-	});
 
+		$("#info_bar").click(function(){		
+			$(".link").css("visibility",'hidden');
+				
+		});
+	});
 })(jQuery);
 
 
