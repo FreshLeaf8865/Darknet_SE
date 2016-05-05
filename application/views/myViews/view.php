@@ -9,11 +9,10 @@ include('simple_html_dom.php');
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>search</title>
+<title>Searcher</title>
 <link href="<?php echo $this->config->base_url(); ?>css/bootstrap.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="<?php echo $this->config->base_url();?>css/style.css" />
-
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="<?php echo $this->config->base_url(); ?>js/bootstrap.min.js"></script>
@@ -27,48 +26,26 @@ include('simple_html_dom.php');
 <script src="<?php echo $this->config->base_url(); ?>js/script.js"></script>
 </head>
 <body>
-
-  <div class="header-link link">
-	<ul class="header-menu" style="display:inline;">
-		<li><a href="<?php echo $this->config->base_url();?>index.php/privacy">Privacy Policy</a></li>
-        <li><a href="<?php echo $this->config->base_url();?>index.php/terms">Terms & Conditions</a></li>
-		<li><a href="*">Feedbacks</a></li>
-		<li><a href="*">Donations</a></li>
-	</ul>
-  </div>
-
-<!-- start   -->
-<div id = "start-form" class="container">
-             
-	<div class = "col-md-12 form-container">
-        <div class="title col-md-2">
-             <div class="col-md-12">
-                 <h1>Mother</h1>
-             </div>
+    <div class="link">
+        <a href="#" class="close" id="info_bar">&times;</a>
+        <div id="alert_content">
+            <img src="<?php echo $this->config->base_url(); ?>images/information.png">
+            <p>Mother protects your identity and make your search safe, allowing to navigate the darknet withouht worry about your privacy.<br>
+                We delete all our users informations periodically and we do not keep anyone on records.</p>
         </div>
-             
-		<div class="col-md-10">
-				<form method="post" action="<?php echo $this->config->base_url();?>index.php/welcome2/results">
-					<div class="col-md-12">
-						<div class="form-group search">
-						   <div class = "search-text">
-								<input type="text" class="form-control input-lg" onfocus="this.placeholder = ''"  type="text" id="q" name="search" class="input"  value="<?php echo isset($_POST['search']) ? $_POST['search'] : '' ?>">
-						   </div>
-						   <div>
-						   		<input class="btn btn-default" type="submit" name="button" value="Search" class="button">
-						   </div>									
-						</div>
-					</div>
-                    <div class="col-md-12" id="">
-                        <div class="center-text"><h1>Explore the deepnet anonimusly & view sites hidden to conventionals search engines.</h1>
-                        </div>
-                    </div>
+    </div>
+    <div id = "search-form" class="search-form">
+        <div class="form-wrapper">
+            <div class="input-wrapper">
+                <label class="input-label">Searcher</label>
+                <form method="post" action="<?php echo $this->config->base_url();?>index.php/welcome2/results">
+                    <input type="text" onfocus="this.placeholder = ''" id="q" name="search" class="input"  value="<?php echo isset($_POST['search']) ? $_POST['search'] : '' ?>">
+                    <input type="submit" value="" class="custom-btn"/>
                 </form>
-		</div>
-	</div>
-
-</div>
-
+            </div>
+            <div class="desc">Explore the deepnet anonimusly.</div>
+        </div>
+    </div>
 </body>
 </html>
 
