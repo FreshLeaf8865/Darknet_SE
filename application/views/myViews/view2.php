@@ -12,6 +12,8 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="<?php echo $this->config->base_url(); ?>js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo $this->config->base_url();?>images/S.png">
+    <link rel="apple-touch-icon" href="<?php echo $this->config->base_url();?>images/S.png"/>
     <!--
 		HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
         WARNING: Respond.js doesn't work if you view the page via file:
@@ -47,10 +49,10 @@
 		<div>Showing results for <b><?php echo isset($_REQUEST['search']) ? $_REQUEST['search'] : '' ?></b></div>
 		<div class="results">
 			<?php
-				$html_torch_session = file_get_html('http://xmh57jrzrnw6insl.onion.to/');
+		/*		$html_torch_session = file_get_html('http://xmh57jrzrnw6insl.onion.to/');
 				$torch_session_element = $html_torch_session->find('form');
 				$torch_session = $torch_session_element[0]->action;
-				  
+		*/		  
 				$html_nevil_session = file_get_html('https://hss3uro2hsxfogfq.onion.to/');
 				$nevil_session_element = $html_nevil_session->find('input[name=session]');
 				$nevil_session = $nevil_session_element[0]->value;
@@ -60,15 +62,15 @@
 				if(isset($_REQUEST['button']))
 				{
 				   // Retrieve the DOM from a given URL
-				   $html_torch = file_get_html('http://xmh57jrzrnw6insl.onion.to'.$torch_session.'?q='.urlencode($search).'&cmd=Search%21');
+		//		   $html_torch = file_get_html('http://xmh57jrzrnw6insl.onion.to'.$torch_session.'?q='.urlencode($search).'&cmd=Search%21');
 				   $html_ahmia = file_get_html('https://ahmia.fi/search/?q='.urlencode($search));
 				   $html_nevil = file_get_html('https://hss3uro2hsxfogfq.onion.to/index.php?q='.urlencode($search).'&session='.$nevil_session.'&numRows=100&hostLimit=100');
 
-				   $ol_torch = $html_torch->find('dl');
+		//		   $ol_torch = $html_torch->find('dl');
 				   $ol_nevil = $html_nevil->find('p');
 				   $ol_ahmia = $html_ahmia->find('li');
 
-				   if( empty($ol_torch) && empty($ol_nevil) && count($ol_ahmia) <= 6 )
+				   if( /*empty($ol_torch) && */ empty($ol_nevil) && count($ol_ahmia) <= 6 )
 				   {
 			?>
 		   <div style="margin-left: 9px;margin-top: 15px;">
@@ -80,19 +82,19 @@
 					}
 					else
 					{
-					  $len_torch = count($ol_torch);
+			//		  $len_torch = count($ol_torch);
 					  $len_nevil = count($ol_nevil);
 					  $len_ahmia = count($ol_ahmia);
 					  
-					  $i_torch = 0;
+			//		  $i_torch = 0;
 					  $i_nevil = 1;
 					  $i_ahmia = 6;
 					  
 					  while(TRUE)
 					  {
-						  if ($i_torch >= $len_torch && $i_nevil >= $len_nevil && $i_ahmia >= $len_ahmia) break;
+						  if (/*$i_torch >= $len_torch && */$i_nevil >= $len_nevil && $i_ahmia >= $len_ahmia) break;
 						  
-						  if ($i_torch < $len_torch)
+			/*			  if ($i_torch < $len_torch)
 						  {
 							$dt = $ol_torch[$i_torch]->find('dt');
 							$dd = $ol_torch[$i_torch]->find('dd');
@@ -116,7 +118,7 @@
 							echo	'<span>' . $body . '</span>';
 							echo '</div>';
 						  }
-						  
+				*/		  
 						  if ($i_nevil < $len_nevil)
 						  {
 							  $html = $ol_nevil[$i_nevil++]->innertext;
@@ -171,24 +173,24 @@
 				{
 					$page_no=$_GET['page'];
 					
-					$html_torch2 = file_get_html('http://xmh57jrzrnw6insl.onion.to'.$torch_session.'?cmd=Search&np='.$page_no.'&q='.urlencode($search));
+			//		$html_torch2 = file_get_html('http://xmh57jrzrnw6insl.onion.to'.$torch_session.'?cmd=Search&np='.$page_no.'&q='.urlencode($search));
 					$html_nevil2 = file_get_html('https://hss3uro2hsxfogfq.onion.to/index.php?q='.urlencode($search).'&session='.$nevil_session.'&start='.strval((int)$page_no*100).'&numRows=100&hostLimit=100');
 					
 					
-					$ol_torch2 = $html_torch2->find('dl');
+			//		$ol_torch2 = $html_torch2->find('dl');
 					$ol_nevil2 = $html_nevil2->find('p');
 										
-					$len_torch2 = count($ol_torch2);
+			//		$len_torch2 = count($ol_torch2);
 					$len_nevil2 = count($ol_nevil2);
 					
-					$i_torch2 = 0;
+			//		$i_torch2 = 0;
 					$i_nevil2 = 1;
 										
 					while(TRUE)
 					{
-						if ($i_torch2 >= $len_torch2 && $i_nevil2 >= $len_nevil2) break;
+						if (/*$i_torch2 >= $len_torch2 &&*/ $i_nevil2 >= $len_nevil2) break;
 						
-						if ($i_torch2 < $len_torch2)
+				/*		if ($i_torch2 < $len_torch2)
 						{
 						  $dt2 = $ol_torch2[$i_torch2]->find('dt');
 						  $dd2 = $ol_torch2[$i_torch2]->find('dd');
@@ -212,7 +214,7 @@
 							echo	'<span>' . $body . '</span>';
 							echo '</div>';
 						}
-						
+					*/	
 						if ($i_nevil2 < $len_nevil2)
 						{
 							  $html = $ol_nevil2[$i_nevil2++]->innertext;

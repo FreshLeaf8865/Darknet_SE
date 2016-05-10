@@ -1,0 +1,224 @@
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+include('simple_html_dom.php');
+?><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Search</title>
+</head>
+<body>
+<style>
+#ahmiaHeader,.metadata {
+    display: none;
+}
+.mid {
+  background: none repeat scroll 0 0 #eeeeee;
+    height: 60px;
+    width: 100%;
+float:left;
+}
+
+
+#onion_key p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+body *{font-family: 'Open Sans', sans-serif !important;}
+body {
+    float: left;
+    margin: 0;
+    width: 100%;
+min-height:670px; 
+background:#ffffff;
+}
+li {
+    list-style: outside none none;
+}
+.logo {
+    float: left;
+    width: 21%;
+}
+
+.searchResults {
+    background: none repeat scroll 0 0 #ffffff !important;
+    float: left;
+    margin-left: 20px;
+    padding: 0;
+    width: 65%;
+}
+.abuseReportForm{display:none;}
+li h4 a:last-child{display:none;}
+li a{color:#2D95F4;}
+.input {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-size: 21px;
+    height: 37px;
+    margin-left: 10px;
+    margin-top: 6px;
+    width:90%;
+}
+
+li a {
+    color: #2d95f4;
+    font-size: 17px;
+    text-decoration: none;
+}
+li h4 {
+    margin-bottom: 0;
+}
+.button {
+   background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    cursor: pointer;
+    float: right;
+    font-size: 21px;
+    height: 45px;
+    margin-top: 5px;
+    width: 9%;
+color:#0081F9;
+}
+
+form {
+    width: 100%;
+}
+html {
+    background: #fff none repeat scroll 0 0;
+}
+
+.logo > a {
+    color: grey;
+    font-size: 39px;
+    font-weight: bold;
+    margin-left: 71px;
+}
+
+.results {
+    background: #ffffff;
+    float: left;
+    width: 100%;
+}
+@media screen and (max-width:1199px)
+{
+#body .mid {height: auto;}
+#body .mid form input {box-sizing: border-box;float: left;font-size: 17px;height: auto;margin: 0;padding: 10px;}
+
+.searchResults {
+    margin-left: 20px;
+    width: 90%;
+}
+}
+
+@media screen and (max-width:767px)
+{
+#body .mid form input#q {width: 85%;}
+#body .mid form input.button {padding-left: 0;padding-right: 0;width: 15%;}
+.searchResults {
+    margin-left: 20px;
+    width: 90%;
+}
+}
+
+@media screen and (max-width:480px)
+{
+#body .mid form input#q {width: 80%;}
+#body .mid form input.button {width: 20%;display:none;}
+.searchResults {
+    margin-left: 20px;
+    width: 90%;
+}
+}
+</style>
+<div id="container">
+
+	<div id="body">
+		<div class="body-contain">
+			<div class="mid">
+				<form method="post" action="">
+						<input type="text" id="q" name="search" class="input" placeholder="Search" value="<?php echo 								isset($_POST['search']) ? $_POST['search'] : '' ?>">
+						<input type="submit" name="button" value="Search" class="button">
+				</form>
+
+				<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+				<script>
+					$(document).on('keyup','#q',function() {
+					var keyword=$(this).val();
+					$.post('http://192.168.1.10/sarupam/CodeIgniter/',{keyword:keyword},function(data){
+					console.log(data);
+					})
+					})
+				</script>
+
+			</div>
+		</div>
+
+
+		<div class="results">
+<?php
+	if(isset($_REQUEST['button']))
+	{
+	$value=$_REQUEST['search'];
+	//echo $data = file_get_contents('https://ahmia.fi/search/?q='.$value.'');
+
+	// Retrieve the DOM from a given URL
+	$html = file_get_html('https://ahmia.fi/search/?q='.$value.'');
+	$ol=$html->find('ol');
+	if(empty($ol))
+	{
+?>
+	<div style="color:#0081f9;font-size: 17px;margin-left: 9px;margin-top: 15px;">
+		Sorry, couldn't find results for
+		<span style="color:#000"><?php echo $value ?> </span> 
+		.Please try again with a different search.
+	</div>
+<?php
+	}
+	else{
+		foreach($ol as $e)
+		echo $e;
+	}
+	// Find all "A" tags and print their HREFs
+	
+
+	// Retrieve all images and print their SRCs
+	//foreach($html->find('img') as $e)
+	 //   echo $e->src . '<br>';
+
+	// Find all images, print their text with the "<>" included
+	//foreach($html->find('img') as $e)
+	   // echo $e->outertext . '<br>';
+
+	// Find the DIV tag with an id of "myId"
+	//foreach($html->find('div#myId') as $e)
+	  //  echo $e->innertext . '<br>';
+
+	// Find all SPAN tags that have a class of "myClass"
+	//foreach($html->find('span.myClass') as $e)
+	  //  echo $e->outertext . '<br>';
+
+	// Find all TD tags with "align=center"
+	//foreach($html->find('td[align=center]') as $e)
+	 //   echo $e->innertext . '<br>';
+	    
+	// Extract all text from a given cell
+	//echo $html->find('td[align="center"]', 1)->plaintext.'<br><hr>';
+	}
+
+?>
+
+	</div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

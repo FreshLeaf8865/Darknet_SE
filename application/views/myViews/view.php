@@ -13,6 +13,8 @@ include('simple_html_dom.php');
 <link href="<?php echo $this->config->base_url(); ?>css/bootstrap.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="<?php echo $this->config->base_url();?>css/style.css" />
+<link rel="shortcut icon" type="image/x-icon" href="<?php echo $this->config->base_url();?>images/S.png">
+<link rel="apple-touch-icon" href="<?php echo $this->config->base_url();?>images/S.png"/>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="<?php echo $this->config->base_url(); ?>js/bootstrap.min.js"></script>
@@ -43,7 +45,7 @@ include('simple_html_dom.php');
                     <input type="submit" value="" class="custom-btn"/>
                 </form>
             </div>
-            <div class="desc">Explore the deepnet anonimusly.</div>
+            <div class="desc">Explore the deepnet anonymously.</div>
         </div>
     </div>
 </body>
